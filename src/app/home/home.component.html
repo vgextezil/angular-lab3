@@ -1,0 +1,14 @@
+<p>Welocome to homepage</p>
+<div >
+  <label>
+    <input type="radio" name="Role" value="User" (change)="changeUserRole('User')" [checked]="ifcheck(UserRoles.User)"> User
+  </label>
+  <label>
+    <input type="radio" name="Role" value="Moderator" (change)="changeUserRole('Moderator')" [checked]="ifcheck(UserRoles.Moderator)"> Moderator
+  </label>
+  <label>
+    <input type="radio" name="Role" value="Administrator" (change)="changeUserRole('Administrator')" [checked]="ifcheck(UserRoles.Administrator)"> Administator
+  </label>
+  <p></p>
+</div>
+<div appGreeting role="{{userRole}}"></div>

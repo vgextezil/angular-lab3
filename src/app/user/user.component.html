@@ -1,0 +1,9 @@
+<li>
+  <p>{{users.at(id-1).firstName}}</p>
+  <p>{{users.at(id-1).lastName}}</p>
+  <p>{{users.at(id-1).dateOfBirth|date: "fullDate": "":"uk-UA"}}</p>
+  <p>{{users.at(id-1).salary|currency:'UAH': 'code'}}</p>
+  <p>{{users.at(id-1).workingHours|converter}}</p>
+</li>
+
+<div appGreeting role="{{userRole}}"></div>

@@ -1,0 +1,18 @@
+/* Стилізація для меню в хедері і футері */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* Стилізація активного пункту меню */
+.active {
+  color: red; /* Змініть кольори на ваш смак */
+}

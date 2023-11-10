@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let user of users">
+    <a routerLink="/user/{{user.id}}">{{user.id}}</a>
+  </li>
+</ul>
+<div appGreeting role="{{userRole}}"></div>

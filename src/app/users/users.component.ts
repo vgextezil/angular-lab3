@@ -1,17 +1,11 @@
-import { Component } from '@angular/core';
-
+import {Component} from '@angular/core';
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-users',
+  templateUrl: './users.component.html',
+  styleUrls: ['./users.component.css']
 })
-export class AppComponent{
-  constructor() {
-    if(localStorage.getItem('userRole') == undefined){
-      localStorage.setItem('userRole', 'User');
-    }
-
-  }
+export class UsersComponent {
+  userRole: any = localStorage.getItem('userRole');
   users: any[] = [
     {
       id: 1,
@@ -75,7 +69,7 @@ export class AppComponent{
       lastName: 'Smith',
       dateOfBirth: '1990-01-01',
       salary: 1000,
-      wokingHours: 1000
+      wokingHours: 478484
     }
   ]
 }
